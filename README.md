@@ -8,17 +8,15 @@ Simple Library Information System
 
 - PHP
 - Composer
-- MySQL
 - Laravel
 
 ## Installation
 
 1. Clone repository ini
 2. Jalankan `composer install`
-3. Copy file `.env.example` menjadi `.env` dan sesuaikan konfigurasi database
+3. Copy `.env.example` menjadi `.env`
 4. Jalankan `php artisan key:generate`
-5. Jalankan `php artisan migrate`
-6. Jalankan `php artisan serve`
+5. Jalankan `php artisan serve`
 
 ## Author
 
