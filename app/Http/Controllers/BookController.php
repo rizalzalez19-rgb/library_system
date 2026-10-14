@@ -7,11 +7,11 @@ class BookController extends Controller
     public function index()
     {
         $books = [
-            ['judul' => 'Pemrograman PHP', 'penulis' => 'Andi', 'tahun' => 2021],
-            ['judul' => 'Laravel untuk Pemula', 'penulis' => 'Budi', 'tahun' => 2022],
-            ['judul' => 'Basis Data Dasar', 'penulis' => 'Citra', 'tahun' => 2020],
-            ['judul' => 'Algoritma Lanjut', 'penulis' => 'Dewi', 'tahun' => 2019],
-            ['judul' => 'Sistem Informasi', 'penulis' => 'Eko', 'tahun' => 2023]
+            ['id' => 1, 'title' => 'Pemrograman PHP',      'author' => 'Andi',  'year' => 2021],
+            ['id' => 2, 'title' => 'Laravel untuk Pemula', 'author' => 'Budi',  'year' => 2022],
+            ['id' => 3, 'title' => 'Basis Data Dasar',     'author' => 'Citra', 'year' => 2020],
+            ['id' => 4, 'title' => 'Algoritma Lanjut',     'author' => 'Dewi',  'year' => 2019],
+            ['id' => 5, 'title' => 'Sistem Informasi',     'author' => 'Eko',   'year' => 2023],
         ];
 
         return view('books.index', compact('books'));
@@ -19,6 +19,8 @@ class BookController extends Controller
 
     public function show($id)
     {
-        return view('books.show', compact('id'));
+        $stock = 7;
+
+        return view('books.show', compact('id', 'stock'));
     }
 }

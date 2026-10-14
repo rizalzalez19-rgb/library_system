@@ -6,7 +6,10 @@
     <h2>Daftar Buku</h2>
     <ul>
         @foreach($books as $book)
-            <li>{{ $book['judul'] }} - {{ $book['penulis'] }} ({{ $book['tahun'] }})</li>
+            <li>
+                <a href="/books/{{ $book['id'] }}">{{ $book['title'] }}</a>
+                - {{ $book['author'] }} ({{ $book['year'] }})
+            </li>
         @endforeach
     </ul>
 @endsection
