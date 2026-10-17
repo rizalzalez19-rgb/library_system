@@ -5,6 +5,10 @@
 @section('content')
     <h2>Daftar Buku</h2>
 
+    @if(session('success'))
+        <p style="color: green;">{{ session('success') }}</p>
+    @endif
+
     <p><a href="{{ route('books.create') }}">+ Tambah Buku</a></p>
 
     <table border="1" cellpadding="8" cellspacing="0">
