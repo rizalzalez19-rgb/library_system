@@ -20,7 +20,14 @@ Simple Library Information System
 5. Jalankan `php artisan key:generate`
 6. Jalankan `php artisan migrate`
 7. Jalankan `php artisan db:seed --class=BookSeeder`
-8. Jalankan `php artisan serve``
+8. Jalankan `php artisan db:seed --class=CategorySeeder`
+9. Jalankan `php artisan db:seed --class=UserSeeder`
+10. Jalankan `php artisan serve`
+
+## Akun Login (khusus latihan lokal)
+
+- Email: `admin@example.com`
+- Password: `password123```
 
 ## Author
 
